@@ -1,0 +1,14 @@
+.nav-links {
+    display: flex;
+    gap: 3rem;
+    .navItem {
+        color: var(--heading-clr);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+    .fade {
+        color: var(--sub-text);
+    }
+}

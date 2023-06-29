@@ -1,0 +1,96 @@
+.hero {
+    margin: 10em auto 5em auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    .col-1 {
+        margin-top: 2em;
+        .sub-head {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 1.4rem;
+            align-items: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 400;
+            margin-bottom: 2em;
+            p:first-child {
+                background: var(--heading-clr);
+                color: var(--main-bg);
+                padding: .3em .7em;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+                border-radius: 20px;
+            }
+            p:last-child {
+                color: var(--sub-text);
+            }
+
+        }
+        h1 {
+            text-transform: uppercase;
+            font-size: 5rem;
+            text-wrap: balance;
+        }
+        p {
+            margin-top: 1.5em;
+        }
+        .cta {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2em;
+            button {
+                border: none;
+                font-size: 1.2rem;
+                text-align: center;
+                text-transform: uppercase;
+                font-family: inherit;
+                font-weight: 700;
+                padding: .7em 1.2em;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+                border-radius: 5px;
+                &:first-child {
+                    background: var(--primary-clr);
+                    color: var(--main-bg);
+                }
+                &:last-child {
+                    background: transparent;
+                    color: var(--sub-text);
+                }
+                @media screen and (width<=890px) {
+                    font-size: 1rem;
+                }
+            }
+        }
+        @media screen and (width<=900px) {
+            margin-top: 3em;
+            grid-row: 2;
+        }
+    }
+    .col-2 {
+        margin-right: -20em;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            @media screen and (width<=900px) {
+               width: 60%;
+               height: auto;
+            }
+        }
+        @media screen and (width<=900px) {
+            grid-row: 1;
+        }
+    }
+    @media screen and (width<=900px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-top: 0;
+        gap: 5rem;
+    }
+}

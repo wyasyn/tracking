@@ -1,0 +1,21 @@
+.app {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 50%;
+        background: rgb(233, 233, 243);
+        z-index: -1;
+        border-radius: 0 0 0 50px;
+        -webkit-border-radius: 0 0 0 50px;
+        -moz-border-radius: 0 0 0 50px;
+        -ms-border-radius: 0 0 0 50px;
+        -o-border-radius: 0 0 0 50px;
+}
+}
